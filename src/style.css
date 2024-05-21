@@ -1,0 +1,66 @@
+:root{
+    --navFontColor: aliceblue;
+    --navBackgroundColor: rgb(0, 0, 255);
+    --navHoverFontColor: rgba(240, 248, 255, 0.423);
+    --navItemActive: rgba(240, 248, 255, 0.884);
+}
+
+body, html{
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    background-color: var(--navBackgroundColor);
+    color:var(--navFontColor);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.02rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    color: var(--navFontColor);
+    text-decoration: none;
+    margin: 0 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        color: var(--navHoverFontColor);
+    }
+}
+
+.nav-item:active{
+    color: var(--navItemActive);
+}
+
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    padding:15px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: #AB5779;
+    width: fit-content;
+    height: fit-content;
+}
+
+.card-header{
+    font-size: 1.5rem;
+}
+
+.btn{
+    background-color: #a83d68;
+    border: none;
+    margin: 0  5px;
+    border-radius: 5px;
+    & :hover{
+        background-color: #a83d6871;
+    }
+    
+}
