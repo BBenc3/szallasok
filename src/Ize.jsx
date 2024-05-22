@@ -17,10 +17,6 @@ export function Ize() {
       getData();
     }, []);
     
-    let container = document.createElement("div")
-    container.id = "container"
-    document.body.appendChild(container)
-    
     return data.map(data2 => <Card key= {i++} data = {data2} />)
 }
 
